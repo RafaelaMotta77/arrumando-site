@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce X - Seu Estilo, Sua Escolha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilo base para a fonte e o fundo */
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6; /* cinza claro para o fundo */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl md:text-2xl font-bold text-gray-800"
+          >E-commerce X</a
+        >
+
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Novidades</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Mais Vendidos</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Promoções</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Contato</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          <button class="text-gray-600 hover:text-blue-600 focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </button>
+          <button
+            class="text-gray-600 hover:text-blue-600 focus:outline-none relative"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            <span
+              class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full"
+              >3</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-8">
+      <section class="bg-blue-600 text-white rounded-lg p-6 sm:p-8 mb-8 text-center">
+        <h1 class="text-2xl sm:text-4xl font-extrabold leading-tight mb-4">
+          Descubra Novas Tendências
+        </h1>
+        <p class="text-sm sm:text-lg font-light mb-6">
+          Encontre produtos únicos para expressar o seu estilo.
+        </p>
+        <button
+          class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors"
+        >
+          Explorar Coleção
+        </button>
+      </section>
+
+      <section>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+          Produtos em Destaque
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/2563eb/ffffff?text=Produto+1"
+              alt="Produto 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Casaco de Lã Clássico
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Um casaco elegante e quente para os dias frios.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 89.99</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/9ca3af/ffffff?text=Produto+2"
+              alt="Produto 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Tênis Casual Vintage
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Conforto e estilo para o seu dia a dia.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 59.99</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/ef4444/ffffff?text=Produto+3"
+              alt="Produto 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Relógio Minimalista
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Um acessório elegante para qualquer ocasião.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 120.00</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/d97706/ffffff?text=Produto+4"
+              alt="Produto 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Conjunto de Chá Japonês
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Peças artesanais para uma experiência única.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 75.00</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/10b981/ffffff?text=Produto+5"
+              alt="Produto 5"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Fone de Ouvido Sem Fio
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Tecnologia de ponta para a sua música.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 159.00</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+          >
+            <img
+              src="https://placehold.co/600x400/6366f1/ffffff?text=Produto+6"
+              alt="Produto 6"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Mochila Urbana de Couro
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Design moderno e prático para o dia a dia.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-blue-600">€ 95.50</span>
+                <button
+                  class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-8 py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2024 E-commerce X. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
